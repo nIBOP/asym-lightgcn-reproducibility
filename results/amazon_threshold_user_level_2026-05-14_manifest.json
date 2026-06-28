@@ -1,0 +1,105 @@
+{
+  "datasets": [
+    "amazon_reduced_min4",
+    "amazon_reduced_min6",
+    "amazon_reduced_min8",
+    "amazon_reduced_min10"
+  ],
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "models": [
+    "SemanticGatedBPR",
+    "LightGCN",
+    "NCL",
+    "AsymLightGCN"
+  ],
+  "controls": [
+    "Semantic-only",
+    "MostPopIndependent"
+  ],
+  "checkpoints": {
+    "amazon_reduced_min4": {
+      "42": {
+        "SemanticGatedBPR": "saved\\extra_reduced_baselines\\clean_amazon_reduced_min4\\SemanticGatedBPR\\BPR-May-14-2026_09-53-56.pth",
+        "LightGCN": "saved\\final_reduced\\clean_amazon_reduced_min4\\LightGCN-May-14-2026_09-57-07.pth",
+        "NCL": "saved\\final_reduced\\clean_amazon_reduced_min4\\NCL-May-14-2026_09-57-40.pth",
+        "AsymLightGCN": "saved\\final_reduced\\clean_amazon_reduced_min4\\LightGCN-May-14-2026_09-57-22.pth"
+      },
+      "43": {
+        "SemanticGatedBPR": "saved\\extra_reduced_baselines\\clean_amazon_reduced_min4\\SemanticGatedBPR\\BPR-May-14-2026_09-54-59.pth",
+        "LightGCN": "saved\\final_reduced\\clean_amazon_reduced_min4\\LightGCN-May-14-2026_09-59-06.pth",
+        "NCL": "saved\\final_reduced\\clean_amazon_reduced_min4\\NCL-May-14-2026_09-59-39.pth",
+        "AsymLightGCN": "saved\\final_reduced\\clean_amazon_reduced_min4\\LightGCN-May-14-2026_09-59-21.pth"
+      },
+      "44": {
+        "SemanticGatedBPR": "saved\\extra_reduced_baselines\\clean_amazon_reduced_min4\\SemanticGatedBPR\\BPR-May-14-2026_09-56-04.pth",
+        "LightGCN": "saved\\final_reduced\\clean_amazon_reduced_min4\\LightGCN-May-14-2026_10-01-05.pth",
+        "NCL": "saved\\final_reduced\\clean_amazon_reduced_min4\\NCL-May-14-2026_10-01-38.pth",
+        "AsymLightGCN": "saved\\final_reduced\\clean_amazon_reduced_min4\\LightGCN-May-14-2026_10-01-20.pth"
+      }
+    },
+    "amazon_reduced_min6": {
+      "42": {
+        "SemanticGatedBPR": "saved\\extra_reduced_baselines\\clean_amazon_reduced_min6\\SemanticGatedBPR\\BPR-May-14-2026_09-54-20.pth",
+        "LightGCN": "saved\\final_reduced\\clean_amazon_reduced_min6\\LightGCN-May-14-2026_09-58-00.pth",
+        "NCL": "saved\\final_reduced\\clean_amazon_reduced_min6\\NCL-May-14-2026_09-58-17.pth",
+        "AsymLightGCN": "saved\\final_reduced\\clean_amazon_reduced_min6\\LightGCN-May-14-2026_09-58-08.pth"
+      },
+      "43": {
+        "SemanticGatedBPR": "saved\\extra_reduced_baselines\\clean_amazon_reduced_min6\\SemanticGatedBPR\\BPR-May-14-2026_09-55-21.pth",
+        "LightGCN": "saved\\final_reduced\\clean_amazon_reduced_min6\\LightGCN-May-14-2026_09-59-59.pth",
+        "NCL": "saved\\final_reduced\\clean_amazon_reduced_min6\\NCL-May-14-2026_10-00-17.pth",
+        "AsymLightGCN": "saved\\final_reduced\\clean_amazon_reduced_min6\\LightGCN-May-14-2026_10-00-07.pth"
+      },
+      "44": {
+        "SemanticGatedBPR": "saved\\extra_reduced_baselines\\clean_amazon_reduced_min6\\SemanticGatedBPR\\BPR-May-14-2026_09-56-30.pth",
+        "LightGCN": "saved\\final_reduced\\clean_amazon_reduced_min6\\LightGCN-May-14-2026_10-01-58.pth",
+        "NCL": "saved\\final_reduced\\clean_amazon_reduced_min6\\NCL-May-14-2026_10-02-15.pth",
+        "AsymLightGCN": "saved\\final_reduced\\clean_amazon_reduced_min6\\LightGCN-May-14-2026_10-02-06.pth"
+      }
+    },
+    "amazon_reduced_min8": {
+      "42": {
+        "SemanticGatedBPR": "saved\\extra_reduced_baselines\\clean_amazon_reduced_min8\\SemanticGatedBPR\\BPR-May-14-2026_09-54-33.pth",
+        "LightGCN": "saved\\final_reduced\\clean_amazon_reduced_min8\\LightGCN-May-14-2026_09-58-29.pth",
+        "NCL": "saved\\final_reduced\\clean_amazon_reduced_min8\\NCL-May-14-2026_09-58-40.pth",
+        "AsymLightGCN": "saved\\final_reduced\\clean_amazon_reduced_min8\\LightGCN-May-14-2026_09-58-34.pth"
+      },
+      "43": {
+        "SemanticGatedBPR": "saved\\extra_reduced_baselines\\clean_amazon_reduced_min8\\SemanticGatedBPR\\BPR-May-14-2026_09-55-35.pth",
+        "LightGCN": "saved\\final_reduced\\clean_amazon_reduced_min8\\LightGCN-May-14-2026_10-00-29.pth",
+        "NCL": "saved\\final_reduced\\clean_amazon_reduced_min8\\NCL-May-14-2026_10-00-39.pth",
+        "AsymLightGCN": "saved\\final_reduced\\clean_amazon_reduced_min8\\LightGCN-May-14-2026_10-00-33.pth"
+      },
+      "44": {
+        "SemanticGatedBPR": "saved\\extra_reduced_baselines\\clean_amazon_reduced_min8\\SemanticGatedBPR\\BPR-May-14-2026_09-56-43.pth",
+        "LightGCN": "saved\\final_reduced\\clean_amazon_reduced_min8\\LightGCN-May-14-2026_10-02-28.pth",
+        "NCL": "saved\\final_reduced\\clean_amazon_reduced_min8\\NCL-May-14-2026_10-02-38.pth",
+        "AsymLightGCN": "saved\\final_reduced\\clean_amazon_reduced_min8\\LightGCN-May-14-2026_10-02-33.pth"
+      }
+    },
+    "amazon_reduced_min10": {
+      "42": {
+        "SemanticGatedBPR": "saved\\extra_reduced_baselines\\clean_amazon_reduced_min10\\SemanticGatedBPR\\BPR-May-14-2026_09-54-40.pth",
+        "LightGCN": "saved\\final_reduced\\clean_amazon_reduced_min10\\LightGCN-May-14-2026_09-58-48.pth",
+        "NCL": "saved\\final_reduced\\clean_amazon_reduced_min10\\NCL-May-14-2026_09-58-56.pth",
+        "AsymLightGCN": "saved\\final_reduced\\clean_amazon_reduced_min10\\LightGCN-May-14-2026_09-58-52.pth"
+      },
+      "43": {
+        "SemanticGatedBPR": "saved\\extra_reduced_baselines\\clean_amazon_reduced_min10\\SemanticGatedBPR\\BPR-May-14-2026_09-55-44.pth",
+        "LightGCN": "saved\\final_reduced\\clean_amazon_reduced_min10\\LightGCN-May-14-2026_10-00-48.pth",
+        "NCL": "saved\\final_reduced\\clean_amazon_reduced_min10\\NCL-May-14-2026_10-00-56.pth",
+        "AsymLightGCN": "saved\\final_reduced\\clean_amazon_reduced_min10\\LightGCN-May-14-2026_10-00-52.pth"
+      },
+      "44": {
+        "SemanticGatedBPR": "saved\\extra_reduced_baselines\\clean_amazon_reduced_min10\\SemanticGatedBPR\\BPR-May-14-2026_09-56-51.pth",
+        "LightGCN": "saved\\final_reduced\\clean_amazon_reduced_min10\\LightGCN-May-14-2026_10-02-47.pth",
+        "NCL": "saved\\final_reduced\\clean_amazon_reduced_min10\\NCL-May-14-2026_10-02-55.pth",
+        "AsymLightGCN": "saved\\final_reduced\\clean_amazon_reduced_min10\\LightGCN-May-14-2026_10-02-51.pth"
+      }
+    }
+  }
+}

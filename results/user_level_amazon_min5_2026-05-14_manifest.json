@@ -1,0 +1,44 @@
+{
+  "dataset": "amazon_reduced_min5",
+  "dataset_name": "clean_amazon_reduced_min5",
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46,
+    47
+  ],
+  "checkpoints": {
+    "42": {
+      "LightGCN": "saved/final_reduced/clean_amazon_reduced_min5/LightGCN-May-04-2026_23-39-32.pth",
+      "AsymLightGCN": "saved/final_reduced/clean_amazon_reduced_min5/LightGCN-May-04-2026_23-39-43.pth",
+      "NCL": "saved/final_reduced/clean_amazon_reduced_min5/NCL-May-08-2026_02-44-26.pth"
+    },
+    "43": {
+      "LightGCN": "saved/final_reduced/clean_amazon_reduced_min5/LightGCN-May-05-2026_20-11-53.pth",
+      "AsymLightGCN": "saved/final_reduced/clean_amazon_reduced_min5/LightGCN-May-05-2026_20-12-04.pth",
+      "NCL": "saved/final_reduced/clean_amazon_reduced_min5/NCL-May-08-2026_02-45-08.pth"
+    },
+    "44": {
+      "LightGCN": "saved/final_reduced/clean_amazon_reduced_min5/LightGCN-May-05-2026_20-13-35.pth",
+      "AsymLightGCN": "saved/final_reduced/clean_amazon_reduced_min5/LightGCN-May-05-2026_20-13-45.pth",
+      "NCL": "saved/final_reduced/clean_amazon_reduced_min5/NCL-May-08-2026_02-45-50.pth"
+    },
+    "45": {
+      "LightGCN": "saved/final_reduced/clean_amazon_reduced_min5/LightGCN-May-08-2026_02-37-32.pth",
+      "AsymLightGCN": "saved/final_reduced/clean_amazon_reduced_min5/LightGCN-May-08-2026_02-37-43.pth",
+      "NCL": "saved/final_reduced/clean_amazon_reduced_min5/NCL-May-08-2026_02-46-31.pth"
+    },
+    "46": {
+      "LightGCN": "saved/final_reduced/clean_amazon_reduced_min5/LightGCN-May-08-2026_02-38-21.pth",
+      "AsymLightGCN": "saved/final_reduced/clean_amazon_reduced_min5/LightGCN-May-08-2026_02-38-31.pth",
+      "NCL": "saved/final_reduced/clean_amazon_reduced_min5/NCL-May-08-2026_02-47-13.pth"
+    },
+    "47": {
+      "LightGCN": "saved/final_reduced/clean_amazon_reduced_min5/LightGCN-May-08-2026_02-38-49.pth",
+      "AsymLightGCN": "saved/final_reduced/clean_amazon_reduced_min5/LightGCN-May-08-2026_02-38-59.pth",
+      "NCL": "saved/final_reduced/clean_amazon_reduced_min5/NCL-May-08-2026_02-47-54.pth"
+    }
+  }
+}

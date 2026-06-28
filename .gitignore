@@ -1,0 +1,58 @@
+# Local Python/runtime files
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+
+# Credentials and local configs
+kaggle.json
+.kaggle/
+.env
+*.key
+*.secret
+
+# Raw and prepared data
+data/
+dataset_prep/data/
+dataset_prep/clean_movies/
+clean_movies/
+clean_amazon/
+clean_yelp/
+reduced_datasets/
+equalized_datasets/
+standardized_datasets/
+
+# Large model/data artifacts
+saved/
+checkpoints/
+*.pt
+*.pth
+*.npy
+*.npz
+*.pkl
+*.pickle
+*.inter
+*.item
+*.user
+
+# Generated logs and local reports
+log_tensorboard/
+*.log
+*.err
+*.out
+*.pid
+*.zip
+
+# Keep curated paper-facing result files tracked
+!results/*.csv
+!results/*.md
+!results/*.json
+
+# Editors/OS
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini

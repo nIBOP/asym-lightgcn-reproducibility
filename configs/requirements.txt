@@ -1,0 +1,17 @@
+# Runtime dependencies for the final full-graph benchmark pipeline.
+# If the target machine needs a specific CUDA build, install the matching
+# PyTorch wheel first, then install this file.
+torch==2.7.1
+recbole==1.2.0
+kmeans-pytorch==0.3
+numpy==1.26.4
+pandas==3.0.1
+scipy==1.12.0
+scikit-learn==1.8.0
+faiss-cpu==1.13.2
+PyYAML==6.0.3
+tqdm==4.67.3
+matplotlib==3.10.8
+seaborn==0.13.2
+sentence-transformers==5.2.3
+kaggle==2.0.0

@@ -1,0 +1,13 @@
+dataset,split,interactions,users,items,avg_interactions_per_user,target_interactions_train_degree_1,target_interactions_train_degree_2,target_interactions_train_degree_ge3,target_users_train_degree_1,target_users_train_degree_2,target_users_train_degree_ge3,eval_user_train_degree_p50,eval_user_train_degree_p90,eval_user_train_degree_p99,target_interaction_train_degree_p50,target_interaction_train_degree_p90,target_interaction_train_degree_p99,split_protocol
+amazon_reduced_min4,train,11860,2157,6125,5.498377375985164,0,1448,10412,0,724,1433,3.0,11.0,27.440000000000055,8.0,27.0,264.0,"RS([0.8,0.1,0.1], group_by=user, order=RO)"
+amazon_reduced_min4,valid,2353,2157,1722,1.0908669448307835,0,724,1629,0,724,1433,3.0,11.0,27.440000000000055,4.0,19.0,264.0,"RS([0.8,0.1,0.1], group_by=user, order=RO)"
+amazon_reduced_min4,test,2353,2157,1737,1.0908669448307835,0,724,1629,0,724,1433,3.0,11.0,27.440000000000055,4.0,19.0,264.0,"RS([0.8,0.1,0.1], group_by=user, order=RO)"
+amazon_reduced_min6,train,9203,1030,5274,8.93495145631068,0,0,9203,0,0,1030,6.0,16.0,33.0,11.0,33.0,264.0,"RS([0.8,0.1,0.1], group_by=user, order=RO)"
+amazon_reduced_min6,valid,1226,1030,1040,1.1902912621359223,0,0,1226,0,0,1030,6.0,16.0,33.0,7.0,29.0,264.0,"RS([0.8,0.1,0.1], group_by=user, order=RO)"
+amazon_reduced_min6,test,1226,1030,1018,1.1902912621359223,0,0,1226,0,0,1030,6.0,16.0,33.0,7.0,29.0,264.0,"RS([0.8,0.1,0.1], group_by=user, order=RO)"
+amazon_reduced_min8,train,7325,602,4563,12.167774086378737,0,0,7325,0,0,602,9.0,20.0,37.0,13.0,35.80000000000109,264.0,"RS([0.8,0.1,0.1], group_by=user, order=RO)"
+amazon_reduced_min8,valid,798,602,726,1.3255813953488371,0,0,798,0,0,602,9.0,20.0,37.0,12.0,37.0,264.0,"RS([0.8,0.1,0.1], group_by=user, order=RO)"
+amazon_reduced_min8,test,798,602,724,1.3255813953488371,0,0,798,0,0,602,9.0,20.0,37.0,12.0,37.0,264.0,"RS([0.8,0.1,0.1], group_by=user, order=RO)"
+amazon_reduced_min10,train,6087,410,4042,14.846341463414634,0,0,6087,0,0,410,11.5,23.100000000000023,54.00999999999965,15.0,55.0,264.0,"RS([0.8,0.1,0.1], group_by=user, order=RO)"
+amazon_reduced_min10,valid,606,410,552,1.4780487804878049,0,0,606,0,0,410,11.5,23.100000000000023,54.00999999999965,16.0,63.0,264.0,"RS([0.8,0.1,0.1], group_by=user, order=RO)"
+amazon_reduced_min10,test,606,410,563,1.4780487804878049,0,0,606,0,0,410,11.5,23.100000000000023,54.00999999999965,16.0,63.0,264.0,"RS([0.8,0.1,0.1], group_by=user, order=RO)"

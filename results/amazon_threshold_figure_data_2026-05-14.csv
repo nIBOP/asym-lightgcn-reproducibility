@@ -1,0 +1,44 @@
+Threshold,Dataset,Model,Metric,Value
+4,Amazon min4,Semantic-only,Recall@50,0.094727023864715
+4,Amazon min4,SemanticGatedBPR,Recall@50,0.1099333333333333
+4,Amazon min4,LightGCN,Recall@50,0.1084333333333333
+4,Amazon min4,NCL,Recall@50,0.1037666666666666
+4,Amazon min4,AsymLightGCN,Recall@50,0.1334
+5,Amazon min5,Semantic-only,Recall@50,0.0854248294932174
+5,Amazon min5,LightGCN,Recall@50,0.0877833333333333
+5,Amazon min5,NCL,Recall@50,0.0906
+5,Amazon min5,AsymLightGCN,Recall@50,0.1297333333333333
+6,Amazon min6,Semantic-only,Recall@50,0.0790009666708695
+6,Amazon min6,SemanticGatedBPR,Recall@50,0.0958
+6,Amazon min6,LightGCN,Recall@50,0.0780333333333333
+6,Amazon min6,NCL,Recall@50,0.0841
+6,Amazon min6,AsymLightGCN,Recall@50,0.125
+8,Amazon min8,Semantic-only,Recall@50,0.0818125488391268
+8,Amazon min8,SemanticGatedBPR,Recall@50,0.1062
+8,Amazon min8,LightGCN,Recall@50,0.0380333333333333
+8,Amazon min8,NCL,Recall@50,0.0529333333333333
+8,Amazon min8,AsymLightGCN,Recall@50,0.1295333333333333
+10,Amazon min10,Semantic-only,Recall@50,0.0673140815823742
+10,Amazon min10,SemanticGatedBPR,Recall@50,0.1011666666666666
+10,Amazon min10,LightGCN,Recall@50,0.028
+10,Amazon min10,NCL,Recall@50,0.033
+10,Amazon min10,AsymLightGCN,Recall@50,0.1420333333333333
+4,Amazon min4,SemanticGatedBPR,Tail Recall@10,0.006909325955886
+4,Amazon min4,LightGCN,Tail Recall@10,0.0013848233877758
+4,Amazon min4,NCL,Tail Recall@10,0.0013848233877758
+4,Amazon min4,AsymLightGCN,Tail Recall@10,0.0306781268647136
+5,Amazon min5,LightGCN,Tail Recall@10,0.00079287098447
+5,Amazon min5,NCL,Tail Recall@10,0.0010716040284942
+5,Amazon min5,AsymLightGCN,Tail Recall@10,0.0409053900033687
+6,Amazon min6,SemanticGatedBPR,Tail Recall@10,0.0153985622288944
+6,Amazon min6,LightGCN,Tail Recall@10,3.2488628979857054e-05
+6,Amazon min6,NCL,Tail Recall@10,0.0
+6,Amazon min6,AsymLightGCN,Tail Recall@10,0.0385663872253168
+8,Amazon min8,SemanticGatedBPR,Tail Recall@10,0.0196381894461946
+8,Amazon min8,LightGCN,Tail Recall@10,0.0005891078235805
+8,Amazon min8,NCL,Tail Recall@10,0.0005375082363772
+8,Amazon min8,AsymLightGCN,Tail Recall@10,0.0524656795294683
+10,Amazon min10,SemanticGatedBPR,Tail Recall@10,0.0296136709385753
+10,Amazon min10,LightGCN,Tail Recall@10,0.0
+10,Amazon min10,NCL,Tail Recall@10,0.0
+10,Amazon min10,AsymLightGCN,Tail Recall@10,0.0577648261904807

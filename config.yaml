@@ -1,0 +1,81 @@
+# ==========================================
+# Базовые настройки данных и окружения
+# ==========================================
+data_path: ./dataset_prep           
+dataset: clean_movies   
+USER_ID_FIELD: user_id
+ITEM_ID_FIELD: item_id
+load_col:
+    inter: [user_id, item_id, rating]
+
+seed: 42
+use_tensorboard: False
+gpu_id: 0
+
+# ==========================================
+# Настройки обучения и оценки
+# ==========================================
+epochs: 300               
+train_batch_size: 2048
+learner: adam
+learning_rate: 0.001
+eval_step: 1
+stopping_step: 10
+
+eval_args:
+    split: {'RS': [0.8, 0.1, 0.1]}
+    group_by: user
+    order: RO
+    mode: full
+metrics: ['Recall', 'NDCG']
+topk: [10, 50]
+valid_metric: NDCG@10
+
+# ==========================================
+# Архитектура AsymLightGCN
+# ==========================================
+
+# --- 1. Внешние файлы ---
+centroids_path: 'dataset_prep/cluster_centroids.pt'
+item_mapping_path: 'dataset_prep/clean_movies/clean_movies.item'
+semantic_embs_path: 'dataset_prep/clean_movies/semantic_embeddings.pt'
+
+# --- 2. Механизм гейтирования (Semantic Gating) ---
+# Использование предобученных текстовых эмбеддингов для решения проблемы "холодного старта"
+use_semantic_gating: True
+# Максимальный вес семантики для "холодных" (новых) фильмов (0.0 - 1.0)
+gating_w_max: 0.8
+
+# --- 3. Adaptive Contrastive Loss (SSL) ---
+# Настройки для сближения графовых векторов с семантическими центроидами
+
+# Вес регуляризации БОЛЬШЕ НЕ НУЖЕН (заменен на автоматическую балансировку Homoscedastic Uncertainty)
+# proto_reg_weight: 0.05
+
+# Температура (Degree-Aware): для редких фильмов tau_min, для популярных tau_max
+tau_min: 0.2
+tau_max: 0.8
+
+# Скорость обновления динамических маяков (EMA - Exponential Moving Average)
+ema_momentum: 0.99
+
+# Квантиль популярности для определения "хитов" (используются для обновления центроидов)
+hit_quantile: 0.80
+
+# Тип сэмплирования негативных примеров для семантического лосса
+semantic_sampling: 'uniform'        # 'uniform' (равномерный) | 'batch' (из батча)
+
+# Зона терпимости: если косинусное сходство вектора и центроида > margin, лосс отключается
+semantic_margin: 0.8                 
+
+# Механизм весов лосса: 'static' (константа) | 'dynamic_leaky_log' (снижение штрафа для хитов) | 'inverse_log'
+alpha_strategy: 'static'
+
+# Границы для dynamic_leaky_log
+semantic_weight_floor: 0.05          # минимальный вес лосса (для супер-хитов)
+semantic_weight_cap: 0.1             # максимальный вес (для всех остальных)
+dynamic_cutoff_quantile: 0.85        # квантиль "супер-хитов", с которого начинается снижение штрафа
+
+# --- 4. Оценка (Prediction / Calibration) ---
+# Дробная калибровка магнитуды: 'сдуваем' огромные векторы хитов на этапе предсказания
+magnitude_calibration_gamma: 0.25
