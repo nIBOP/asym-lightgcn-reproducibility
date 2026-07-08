@@ -1,6 +1,6 @@
 # User-Level Significance Analysis
 
-Per-user Recall@K and NDCG@K were recomputed with full-sort candidate masking for the paper-facing Amazon min5 test split. Deltas are averaged per user across available seeds before bootstrap and non-parametric tests.
+Per-user Recall@K and NDCG@K were recomputed with full-sort candidate masking for the selected Amazon min5 test split. Deltas are averaged per user across available seeds before bootstrap and non-parametric tests.
 
 Bootstrap samples: 10000
 

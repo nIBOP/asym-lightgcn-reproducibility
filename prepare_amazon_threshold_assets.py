@@ -19,7 +19,7 @@ MOSTPOP_THRESHOLD = Path("train_logs/mostpop_amazon_threshold_sweep_2026-05-14.c
 MOSTPOP_MIN5 = Path("train_logs/mostpop_amazon_min_degree_6seed_2026-05-08.csv")
 
 OUT_DIR = Path("train_logs")
-FIG_DIR = Path("paper/figures")
+FIG_DIR = Path("results/figures")
 
 
 def read_inter(dataset_dir, dataset_name):

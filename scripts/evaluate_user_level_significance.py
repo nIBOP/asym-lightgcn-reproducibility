@@ -64,7 +64,7 @@ def parse_args():
     parser = argparse.ArgumentParser(
         description=(
             "Compute per-user full-sort metrics and paired user-level tests "
-            "for paper-facing comparisons."
+            "for selected benchmark comparisons."
         )
     )
     parser.add_argument("--dataset", default="amazon_reduced_min5", choices=["amazon_reduced_min5"])
@@ -482,7 +482,7 @@ def write_markdown(path, summary, tests, args):
         handle.write("# User-Level Significance Analysis\n\n")
         handle.write(
             "Per-user Recall@K and NDCG@K were recomputed with full-sort candidate "
-            "masking for the paper-facing Amazon min5 test split. Deltas are averaged "
+            "masking for the selected Amazon min5 test split. Deltas are averaged "
             "per user across available seeds before bootstrap and non-parametric tests.\n\n"
         )
         handle.write(f"Bootstrap samples: {args.bootstrap_samples}\n\n")

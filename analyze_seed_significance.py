@@ -1,4 +1,4 @@
-"""Small paired-seed significance helper for paper-facing result tables.
+"""Small paired-seed significance helper for selected result tables.
 
 Most current rows have three paired seeds, while the Amazon min5 core block
 has been extended to six seeds. Therefore the output should be treated as a
@@ -35,8 +35,8 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
         "--input",
-        default="train_logs/paper_facing_reduced_results_corrected_2026-05-07_selected_rows.csv",
-        help="Base per-seed paper-facing result CSV.",
+        default="train_logs/reduced_results_corrected_2026-05-07_selected_rows.csv",
+        help="Base per-seed selected result CSV.",
     )
     parser.add_argument(
         "--amazon-min5-input",
@@ -45,7 +45,7 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--output-prefix",
-        default="train_logs/paper_significance_2026-05-08",
+        default="train_logs/seed_significance_2026-05-08",
         help="Output prefix for .csv and .md files.",
     )
     return parser.parse_args()
@@ -187,7 +187,7 @@ def write_markdown(rows: list[dict[str, str]], path: Path) -> None:
         "Signflip p",
     ]
     lines = [
-        "# Paper Significance Sanity Check",
+        "# Seed-Level Significance Sanity Check",
         "",
         "This table uses paired seeds and exact sign-flip p-values. Amazon min5 uses",
         "six paired seeds where available, so an all-same-direction comparison can",

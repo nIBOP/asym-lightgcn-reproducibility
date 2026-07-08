@@ -1,21 +1,18 @@
 # AsymLightGCN Reproducibility Package
 
-This repository is a curated reproducibility package for the paper:
+This repository contains a compact public package for reproducing AsymLightGCN experiments under sparse user-item interaction data.
 
-> Diagnostic Evaluation Protocol for Graph-Semantic Recommender Models under Sparse Data
-
-It contains the model implementation, experiment configuration files, paper-facing scripts, aggregate results, and documentation needed to reproduce the diagnostic protocol described in the article. It intentionally does not include raw datasets, prepared interaction files, semantic embeddings, or model checkpoints.
+It includes the model implementation, RecBole configuration files, benchmark and evaluation scripts, aggregate result tables, and data-access notes. It intentionally does not include raw datasets, prepared interaction files, semantic embeddings, or model checkpoints.
 
 ## What Is Included
 
 - `asym_model/` - AsymLightGCN implementation and related model utilities.
-- root `*.py` scripts - benchmark, evaluation, statistical analysis, and artifact-preparation scripts used for the paper.
+- root `*.py` scripts - benchmark, evaluation, statistical analysis, and result-preparation entry points.
 - `scripts/` - auxiliary/demo scripts copied from the working project.
 - `configs/` - base RecBole configuration and Python dependencies.
 - `build_semantic_embeddings.py` and `build_semantic_centroids.py` - generic scripts for rebuilding semantic item artifacts from a prepared `item_id,text` CSV.
-- `results/` - aggregate paper-facing tables and statistical summaries.
-- `paper/` - revised article draft, response-to-reviewer draft, figures, and reproducibility manifest.
-- `docs/` - data-access notes, release checklist, and artifact policy.
+- `results/` - aggregate evaluation tables and statistical summaries.
+- `docs/` - data-access and artifact-policy notes.
 - `tests/` - lightweight configuration tests.
 
 ## What Is Not Included
@@ -30,7 +27,7 @@ The following files are excluded on purpose:
 
 See `docs/DATA_ACCESS.md` for instructions and rationale.
 
-## Public Release Strategy
+## Repository URL
 
 This package is published as a separate public repository:
 
@@ -38,10 +35,7 @@ This package is published as a separate public repository:
 https://github.com/nIBOP/asym-lightgcn-reproducibility
 ```
 
-For a persistent archival identifier, create a tagged GitHub release and archive it through Zenodo. The article can then cite either:
-
-- the public GitHub URL; or
-- the Zenodo DOI, if a persistent identifier is preferred.
+For a persistent archival identifier, create a tagged GitHub release and archive it through Zenodo.
 
 ## Environment
 
@@ -97,16 +91,16 @@ python run_final_full_graph_benchmarks.py --datasets amazon_reduced_min5 movies_
 
 ```powershell
 python evaluate_mostpop_independent.py
-python analyze_paper_significance.py
+python analyze_seed_significance.py
 python evaluate_user_level_significance.py
-python prepare_paper_artifacts.py
+python prepare_amazon_threshold_assets.py
 ```
 
 The exact command set may need adjustment depending on which artifacts are restored locally. Aggregate reference outputs are included in `results/`.
 
 ## Citation
 
-Use `CITATION.cff` for software-package citation. After the article is published, update the preferred article citation with the final bibliographic metadata.
+Use `CITATION.cff` for software-package citation.
 
 ## License
 

@@ -12,7 +12,7 @@ For this reason, the public reproducibility repository should contain:
 - preparation scripts;
 - filtering rules and configuration files;
 - split protocol descriptions;
-- aggregate statistics and paper-facing results.
+- aggregate statistics and selected evaluation results.
 
 It should not contain:
 
@@ -60,7 +60,7 @@ Recommended public-repo treatment:
 
 ## Semantic Embeddings and Centroids
 
-Semantic embeddings and centroids are derived from source metadata and can be large. They should not be committed to Git. The package should instead document:
+Semantic embeddings and centroids are derived from source metadata and can be large. They should not be committed to Git. The package should instead record:
 
 - the sentence-transformers model name: `sentence-transformers/all-MiniLM-L6-v2`;
 - text fields used to build item descriptions;
@@ -79,4 +79,4 @@ If split assignment files are generated, prefer one of two approaches:
 1. publish deterministic split-generation scripts with fixed seeds; or
 2. publish minimal split identifiers only if the underlying dataset terms permit derived split redistribution.
 
-For the current release, the safer default is approach 1: document the split protocol and seeds, and include aggregate split statistics.
+For the current release, the safer default is approach 1: describe the split protocol and seeds, and include aggregate split statistics.

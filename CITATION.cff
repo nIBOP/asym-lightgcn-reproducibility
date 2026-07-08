@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 title: "AsymLightGCN Reproducibility Package"
-message: "If you use this package, please cite the associated article."
+message: "If you use this software, please cite it using the metadata from this file."
 type: software
 authors:
   - family-names: "Dubrovin"
@@ -15,15 +15,4 @@ authors:
 repository-code: "https://github.com/nIBOP/asym-lightgcn-reproducibility"
 date-released: "2026-06-28"
 license: MIT
-abstract: "Curated code, configuration, and aggregate result package for reproducing the diagnostic evaluation protocol for graph-semantic recommender models under sparse data."
-preferred-citation:
-  type: article
-  title: "Diagnostic Evaluation Protocol for Graph-Semantic Recommender Models under Sparse Data"
-  authors:
-    - family-names: "Dubrovin"
-      given-names: "V. V."
-    - family-names: "Alatortsev"
-      given-names: "E. I."
-    - family-names: "Babkin"
-      given-names: "I. A."
-  year: 2026
+abstract: "Curated code, configuration, and aggregate result package for reproducing AsymLightGCN experiments under sparse user-item interaction data."

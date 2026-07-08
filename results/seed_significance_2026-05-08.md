@@ -1,4 +1,4 @@
-# Paper Significance Sanity Check
+# Seed-Level Significance Sanity Check
 
 This table uses paired seeds and exact sign-flip p-values. Amazon min5 uses
 six paired seeds where available, so an all-same-direction comparison can

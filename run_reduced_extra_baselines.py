@@ -33,7 +33,7 @@ def parse_args():
     parser = argparse.ArgumentParser(
         description=(
             "Run additional reduced-dataset RecBole trainable baselines. "
-            "Use evaluate_mostpop_independent.py for the paper-safe MostPop baseline."
+            "Use evaluate_mostpop_independent.py for the independent MostPop baseline."
         )
     )
     parser.add_argument(

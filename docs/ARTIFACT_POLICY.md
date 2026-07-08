@@ -4,10 +4,10 @@
 
 - Python source code required to define and evaluate AsymLightGCN.
 - Configuration files and dataset path specifications.
-- Scripts used to prepare article tables and statistical summaries.
-- Aggregate result tables used in the article.
-- Figures used in the article.
-- Reproducibility manifest and response-to-reviewer material.
+- Scripts used to prepare aggregate result tables and statistical summaries.
+- Aggregate evaluation result tables.
+- Lightweight plots or figure data generated directly from aggregate results.
+- Data-access and artifact-policy notes.
 
 ## Exclude from the Public Repository
 
@@ -21,9 +21,9 @@
 
 ## Optional External Archive
 
-If a journal or reviewer requires heavier artifacts, create a separate Zenodo archive with restricted or clearly licensed contents. Do not mix large or license-sensitive artifacts into the GitHub code repository.
+If heavier artifacts are needed, create a separate Zenodo archive with restricted or clearly licensed contents. Do not mix large or license-sensitive artifacts into the GitHub code repository.
 
 Recommended split:
 
-- GitHub: code, configs, scripts, aggregate results, documentation.
+- GitHub: code, configs, scripts, aggregate results, technical notes.
 - Zenodo: tagged snapshot of GitHub and, only if legally allowed, additional deterministic split metadata.
