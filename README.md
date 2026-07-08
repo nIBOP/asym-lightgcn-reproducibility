@@ -30,17 +30,17 @@ The following files are excluded on purpose:
 
 See `docs/DATA_ACCESS.md` for instructions and rationale.
 
-## Recommended Public Release Strategy
+## Public Release Strategy
 
-Use this package as a separate public repository, for example:
+This package is published as a separate public repository:
 
 ```text
 https://github.com/nIBOP/asym-lightgcn-reproducibility
 ```
 
-After the GitHub repository is created, archive a release through Zenodo and replace the placeholder repository URL in the article with either:
+For a persistent archival identifier, create a tagged GitHub release and archive it through Zenodo. The article can then cite either:
 
-- the public GitHub URL, if the journal accepts it; or
+- the public GitHub URL; or
 - the Zenodo DOI, if a persistent identifier is preferred.
 
 ## Environment
@@ -106,7 +106,7 @@ The exact command set may need adjustment depending on which artifacts are resto
 
 ## Citation
 
-Use `CITATION.cff` after filling the final publication metadata.
+Use `CITATION.cff` for software-package citation. After the article is published, update the preferred article citation with the final bibliographic metadata.
 
 ## License
 

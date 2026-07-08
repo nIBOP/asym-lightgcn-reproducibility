@@ -1,23 +1,23 @@
 # Public Release Checklist
 
-Before creating the public GitHub repository:
+Current public repository status:
 
 - [x] Choose final repository owner/account: `nIBOP`.
 - [x] Choose final repository name: `asym-lightgcn-reproducibility`.
 - [x] Confirm the code license: MIT.
-- [x] Replace placeholder URL in `CITATION.cff`.
-- [ ] Confirm no credentials are present.
-- [ ] Confirm no raw data or prepared dataset files are present.
-- [ ] Confirm no `.pt`, `.pth`, `.npy`, `.pkl`, `.inter`, `.item`, `.user` files are present.
-- [ ] Run a file-size audit.
-- [ ] Run a secret scan or at least search for `kaggle`, `token`, `password`, `secret`, `api_key`.
-- [ ] Create the GitHub repository.
-- [ ] Push the curated package.
+- [x] Set the public GitHub URL in `CITATION.cff`.
+- [x] Create the GitHub repository.
+- [x] Push the curated package.
+- [ ] Confirm no credentials are present before each public release.
+- [ ] Confirm no raw data or prepared dataset files are present before each public release.
+- [ ] Confirm no `.pt`, `.pth`, `.npy`, `.pkl`, `.inter`, `.item`, `.user` files are present before each public release.
+- [ ] Run a file-size audit before each public release.
+- [ ] Run a secret scan or at least search for `kaggle`, `token`, `password`, `secret`, `api_key` before each public release.
 - [ ] Create a tagged release.
 - [ ] Optionally connect the GitHub repository to Zenodo and mint a DOI.
 - [ ] Replace the article URL with the final GitHub URL or Zenodo DOI.
 
-Suggested commands from this package directory:
+Initial publication commands, already completed for the public GitHub repository:
 
 ```powershell
 git init
@@ -29,7 +29,7 @@ git remote add origin https://github.com/nIBOP/asym-lightgcn-reproducibility.git
 git push -u origin main
 ```
 
-Alternatively, after creating the empty GitHub repository, run:
+For a future clean re-publication to a newly created empty repository, run:
 
 ```powershell
 .\PUBLISH_TO_GITHUB.ps1
