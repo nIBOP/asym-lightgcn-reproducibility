@@ -27,7 +27,7 @@ It should not contain:
 ### Amazon Books Reviews
 
 Source page:
-https://www.kaggle.com/datasets/mohamedbakhet/amazon-books-reviews
+https://www.kaggle.com/datasets/mohamedbakhet/amazon-books-reviews/data
 
 Recommended public-repo treatment:
 
@@ -38,7 +38,7 @@ Recommended public-repo treatment:
 ### The Movies Dataset
 
 Source page:
-https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset
+https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset/data
 
 Recommended public-repo treatment:
 
